@@ -1,55 +1,82 @@
 # BAYESIAN-GAUSSIAN-MIXTURE-MODELS-
 
-Bias and Variance in Machine Learning
+Bayesian Gaussian Mixture Model (BGMM) in Machine Learning
 -
-This repository contains a presentation that explains the Bias-Variance tradeoff, one of the most important concepts in machine learning model evaluation.
+This repository contains an exploration of the Bayesian Gaussian Mixture Model (BGMM), an advanced clustering technique that extends the Gaussian Mixture Model (GMM) by introducing Bayesian priors.
 
 📖 Overview
 -
-Machine Learning models often face two major sources of error: Bias and Variance.
+Unlike traditional clustering methods such as K-Means, which assign each data point to exactly one cluster, BGMM models clusters as probability distributions and allows for uncertainty in cluster assignments.
 
-Bias: Error due to oversimplified assumptions (leads to underfitting).
+The Bayesian approach provides a principled way to:
 
-Variance: Error due to over-complexity and sensitivity to data (leads to overfitting).
+Automatically determine the optimal number of clusters.
 
-Finding the right balance between these two is key to building robust, accurate, and generalizable models.
+Prevent overfitting by using priors.
+
+Capture uncertainty in model parameters.
+
+🔑 Key Concepts Covered
+-
+Introduction to Mixture Models
+
+Difference between GMM and BGMM
+
+Variational Inference for parameter estimation
+
+Model selection with Bayesian Information Criterion (BIC)
+
+Visualizations of clustering results
 
 📂 Contents
 -
-BIAS AND VARIANCE.pdf – Main presentation.
+notebooks/ → Jupyter notebooks with BGMM implementation and experiments
 
-1759292397214.pdf – Supporting material/design file.
+data/ → Sample datasets for clustering
 
-🔑 Key Concepts Covered
+src/ → Python scripts for model training and visualization
 
-What is Bias?
+README.md → Project documentation
 
-What is Variance?
-
-Underfitting vs. Overfitting.
-
-Scenarios of Bias & Variance combinations:
-
-High Bias, Low Variance
-
-Low Bias, High Variance
-
-High Bias, High Variance
-
-Low Bias, Low Variance (ideal case)
-
-🎯 Goal
+🛠️ Installation
 -
-To provide students, professionals, and ML enthusiasts with a clear and visual understanding of how bias and variance affect model performance.
+Clone this repository and install the required dependencies:
 
-🚀 Use Cases
+git clone https://github.com/your-username/bgmm-clustering.git
+cd bgmm-clustering
+pip install -r requirements.txt
+
+🚀 Usage
 -
-Learning and teaching material for Data Science & Machine Learning courses.
+Run the Jupyter notebook to explore BGMM clustering:
 
-Quick revision of the bias-variance tradeoff concept.
+jupyter notebook notebooks/bgmm_demo.ipynb
 
-Reference for ML model evaluation discussions.
+
+Or run the script on a dataset:
+
+python src/bgmm_clustering.py --data data/sample.csv
+
+📊 Example Output
+-
+Soft cluster assignments (probabilities instead of hard labels)
+
+Automatic detection of optimal number of clusters
+
+Visual comparison of K-Means, GMM, and BGMM
+
+🎯 Applications
+-
+Market segmentation
+
+Image compression
+
+Speech recognition
+
+Anomaly detection
 
 👨‍💻 Author
 -
 Kasi Rajan
+
+
